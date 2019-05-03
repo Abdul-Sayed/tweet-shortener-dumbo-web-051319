@@ -45,3 +45,15 @@ end
 
 ###########################################################################
 
+def selective_tweet_shortener(tweet_string)
+  # Should only operate on tweets longer than 140 characters
+  # Should return the original tweet if the tweet is 140 characters or shorter.
+  # Should only operate on tweets 1, 3, 5 and skip tweets 2,4
+
+  if (tweet_string.length > 140)
+    return word_substituter(tweet_string)
+  else
+    return tweet_string
+  end
+end
+
