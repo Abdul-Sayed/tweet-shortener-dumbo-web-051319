@@ -1,4 +1,16 @@
-def word_substituter(tweet_string, dictionary)
+def word_substituter(tweet_string)
+  dictionary = {
+    "hello" => "hi",
+    "to" => "2",
+    "two" => "2",
+    "too" => "2",
+    "for" => "4",
+    "four" => "4",
+    "be" => "b",
+    "you" => "u",
+    "at" => "@",
+    "and" => "&",
+  }
 
   # convert tweet string to array with .split
   tweet_array = tweet_string.split(" ")
