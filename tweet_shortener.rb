@@ -57,3 +57,7 @@ def selective_tweet_shortener(tweet_string)
   end
 end
 
+# puts selective_tweet_shortener(tweet_five)
+
+###########################################################################
+
