@@ -28,3 +28,16 @@ def word_substituter(tweet_string)
   #convert the modified tweet array to string with .join and return it
   return tweet_array.join(" ")
 end
+
+###########################################################################
+
+def bulk_tweet_shortener(tweet_list)
+  tweet_list.map { |tweet|
+    puts word_substituter(tweet)
+  }
+  # puts tweet_list
+  # return tweet_list
+end
+
+###########################################################################
+
