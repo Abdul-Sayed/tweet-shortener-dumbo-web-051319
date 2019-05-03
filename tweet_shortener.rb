@@ -5,6 +5,7 @@ def word_substituter(tweet_string)
     "two" => "2",
     "too" => "2",
     "for" => "4",
+    "For" => "4",
     "four" => "4",
     "be" => "b",
     "you" => "u",
@@ -15,9 +16,8 @@ def word_substituter(tweet_string)
   # convert tweet string to array with .split
   tweet_array = tweet_string.split(" ")
 
-  # compare words in keys array to tweet array
-  for key in dictionary.keys
-    tweet_array.map { |word|
+  for word in tweet_array
+    dictionary.keys.each { |key|
       # replace matching words in tweet_array with the key's value from the dictionary.
       if (word == key)
         word.replace dictionary[key]
@@ -29,6 +29,8 @@ def word_substituter(tweet_string)
   return tweet_array.join(" ")
 end
 
+# puts word_substituter(tweet_five)
+
 ###########################################################################
 
 def bulk_tweet_shortener(tweet_list)
@@ -39,5 +41,6 @@ def bulk_tweet_shortener(tweet_list)
   # return tweet_list
 end
 
-###########################################################################
+# bulk_tweet_shortener(tweet_list)
 
+#########################################################################################
