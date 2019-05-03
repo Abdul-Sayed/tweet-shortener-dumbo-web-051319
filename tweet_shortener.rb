@@ -77,6 +77,8 @@ end
 # puts word_substituter(tweet_one).length
 # puts shortened_tweet_truncator(tweet_one)
 
+##########################################################################
+
 
 
 
