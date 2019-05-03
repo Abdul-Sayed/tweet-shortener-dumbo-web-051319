@@ -61,3 +61,27 @@ end
 
 ###########################################################################
 
+def shortened_tweet_truncator(tweet_string)
+  if (tweet_string.length > 140)
+    if (word_substituter(tweet_string).length > 140)
+      return word_substituter(tweet_string).slice!(0, 137).concat("...")
+    else
+      return word_substituter(tweet_string)
+    end
+  else
+    return tweet_string
+  end
+end
+
+# puts tweet_one.length
+# puts word_substituter(tweet_one).length
+# puts shortened_tweet_truncator(tweet_one)
+
+
+
+
+
+
+
+
+
